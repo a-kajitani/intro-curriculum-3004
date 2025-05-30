@@ -11,4 +11,13 @@ function add(numbers) {
   return result;
 }
 
-module.exports = { add };
+
+//整数をすべて掛け合わす関数
+function multi(numbers){
+  let result = 1;
+  for (const num of numbers) {
+    result = result * num;
+  }
+  return result;
+}
+module.exports = { add,multi };
